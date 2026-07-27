@@ -1,7 +1,5 @@
 package String;
 
-import java.util.Scanner;
-
 public class Solution {
 
     public static boolean areAnagrams(String s1, String s2) {
