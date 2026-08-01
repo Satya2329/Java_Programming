@@ -1,0 +1,17 @@
+package LoopControl;
+import java.util.Scanner;
+public class Count{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the digit");
+        int number = sc.nextInt();
+        int sum =0;
+        while(number > 0){
+            int digit = number % 10;
+            sum = sum + digit;
+            number = number/10;
+        }
+        System.out.println("Sum of the digit is" + sum);
+        sc.close();
+    }
+}
