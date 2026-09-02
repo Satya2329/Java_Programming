@@ -14,8 +14,6 @@ public class CharacterFrequency {
         for (char ch : str.toCharArray()) {
             frequencyMap.put(ch, frequencyMap.getOrDefault(ch, 0) + 1);
         }
-
-        // Print character frequencies
         System.out.println("Character frequencies:");
         for (Map.Entry<Character, Integer> entry : frequencyMap.entrySet()) {
             char displayChar = entry.getKey();
