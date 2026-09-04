@@ -9,7 +9,7 @@ public class SecondLargest {
             if(arr[i] > large){
                 sl = large;
                 large = arr[i];
-            } else if(arr[i] != large ){
+            } else if(arr[i] > sl && arr[i] != large ){
                 sl = arr[i];
             }
         }
