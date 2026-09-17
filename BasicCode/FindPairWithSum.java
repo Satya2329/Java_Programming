@@ -12,15 +12,12 @@ public class FindPairWithSum {
         System.out.println("Target Sum: " + target);
         System.out.println("-----------------------------------");
 
-        // Test HashSet approach
         int[] resultHashSet = findPairHashSet(numbers, target);
         if (resultHashSet.length == 2) {
             System.out.println("HashSet Solution: Found pair (" + resultHashSet[0] + ", " + resultHashSet[1] + ")");
         } else {
             System.out.println("HashSet Solution: No pair found.");
         }
-
-        // Test Two Pointer approach
         int[] resultTwoPointer = findPairTwoPointer(numbers, target);
         if (resultTwoPointer.length == 2) {
             System.out.println("Two Pointer Solution: Found pair (" + resultTwoPointer[0] + ", " + resultTwoPointer[1] + ")");
@@ -29,11 +26,6 @@ public class FindPairWithSum {
         }
     }
 
-    /**
-     * Finds a pair using a HashSet.
-     * Time Complexity: O(n)
-     * Space Complexity: O(n)
-     */
     public static int[] findPairHashSet(int[] arr, int target) {
         if (arr == null || arr.length < 2) return new int[]{};
 
@@ -50,11 +42,7 @@ public class FindPairWithSum {
         return new int[]{};
     }
 
-    /**
-     * Finds a pair using the Two-Pointer approach.
-     * Time Complexity: O(n log n) due to sorting
-     * Space Complexity: O(n) to preserve original array, O(1) if sorted in-place
-     */
+    
     public static int[] findPairTwoPointer(int[] arr, int target) {
         if (arr == null || arr.length < 2) return new int[]{};
 
